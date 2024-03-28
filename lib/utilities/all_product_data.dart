@@ -83,7 +83,7 @@ class ProductData {
           "rating": 4.6,
           "stock": 400,
           "brand": "OnePlus",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/71v2jVh6nIL._SX679_.jpg",
           "images": [
@@ -101,7 +101,7 @@ class ProductData {
           "rating": 4.2,
           "stock": 600,
           "brand": "Xiaomi",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [
@@ -122,7 +122,7 @@ class ProductData {
           "rating": 4.8,
           "stock": 200,
           "brand": "Sony",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [
@@ -143,7 +143,7 @@ class ProductData {
           "rating": 4.6,
           "stock": 400,
           "brand": "Huawei",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [
@@ -163,7 +163,7 @@ class ProductData {
           "rating": 4.5,
           "stock": 500,
           "brand": "Oppo",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [
@@ -183,7 +183,7 @@ class ProductData {
           "rating": 4.4,
           "stock": 300,
           "brand": "Realme",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [
@@ -203,7 +203,7 @@ class ProductData {
           "rating": 4.3,
           "stock": 400,
           "brand": "Motorola",
-          "category": "smartphones",
+          "category": "Smartphones",
           "thumbnail":
               "https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg",
           "images": [

@@ -1,5 +1,4 @@
 import 'package:e_commerce_demo/utilities/all_product_data.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetails extends StatefulWidget {
@@ -17,7 +16,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xffF8F8F8),
-        title: Text(
+        title: const Text(
           "Details Page",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -88,13 +87,22 @@ class _ProductDetailsState extends State<ProductDetails> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            "Iphone X",
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
+                          SizedBox(
+                            width: 250,
+                            child: Text(
+                              "${data['title']}",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight:
+                                  FontWeight.bold,
+                                  fontSize: 18),
+                              maxLines: 1,
+                              overflow:
+                              TextOverflow.ellipsis,
+                            ),
                           ),
                           Text(
-                            "\$ 889",
+                            "\$ ${data['price']}",
                             style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
@@ -105,7 +113,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Smartphones",
+                            "${data['category']}",
                             style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -118,7 +126,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                 color: Colors.amber,
                               ),
                               Text(
-                                "4.44",
+                                "${data['rating']}",
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -139,7 +147,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "Apple",
+                            "${data['brand']}",
                             style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
@@ -158,7 +166,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "34",
+                            "${data['stock']}",
                             style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
@@ -172,17 +180,25 @@ class _ProductDetailsState extends State<ProductDetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
+
                           Text(
                             "Description",
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
-                          Text(
-                            "34",
-                            style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey),
+                          SizedBox(
+                            width: double.infinity,
+                            child: Text(
+                              "${data['description']}",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight:
+                                  FontWeight.bold,
+                                  fontSize: 18),
+                              maxLines: 3,
+                              overflow:
+                              TextOverflow.ellipsis,
+                            ),
                           ),
                         ]),
                   ],
